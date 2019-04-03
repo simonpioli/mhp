@@ -10,3 +10,11 @@
     clear: both;
   }
 }
+
+@mixin link-states {
+  &:hover,
+  &:active,
+  &:focus {
+    @content
+  }
+}
