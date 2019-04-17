@@ -6,7 +6,7 @@
            alt="Manchester Homelessness Partnership logo" class="site-header__logo__image">
     </h1>
 
-    <!--TODO: Generate a nav-->
+    <!--TODO: Generate a menu programmatically-->
     <nav class="site-nav">
       <a href="#" data-target="#site-nav" class="navbar-toggle js-navToggle" aria-label="Toggle Navigation">
         <i class="icon-bar"></i>
@@ -14,8 +14,16 @@
         <i class="icon-bar"></i>
       </a>
       <ul id="site-nav" class="site-nav__list nav-list">
+        <li class="nav-list__item nav-list__item--close">
+          <a href="#" data-target="#site-nav" class="nav-list__item__link js-navToggle" aria-label="Toggle Navigation">
+            Close Menu <span>&times;</span>
+          </a>
+        </li>
         <li class="nav-list__item">
           <a href="/" class="nav-list__item__link">Home</a>
+        </li>
+        <li class="nav-list__item">
+          <a href="/homelessness-strategy" class="nav-list__item__link">Homelessness Strategy</a>
         </li>
       </ul>
     </nav>
