@@ -1,19 +1,17 @@
+import {on} from "delegated-events";
+
 export default {
   toggleNav: () => {
-    const navToggles = document.querySelectorAll('.js-navToggle');
+    const activeClass = "active";
 
-    window.addEventListener("click", (evt) => {
+    on("click", ".js-navToggle", (evt) => {
+      const tgt = document.getElementById(evt.currentTarget.dataset["target"].replace("#", ""));
 
-      if (!evt.target.matches('.js-navToggle')) return;
-
-      console.log(evt);
-
-      const tgt = evt.target.data("target");
-      console.log(tgt);
-
-
-      // const menu =
-
+      if (!tgt.classList.contains(activeClass)) {
+        tgt.classList.add(activeClass);
+      } else {
+        tgt.classList.remove(activeClass);
+      }
     });
   }
 };

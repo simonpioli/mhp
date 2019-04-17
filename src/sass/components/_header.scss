@@ -1,5 +1,6 @@
 .site-header {
   @include cf;
+  position: relative;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%);
 
   &__logo {
